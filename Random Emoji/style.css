@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: cursive;
+    justify-content: center;
+    background:linear-gradient(to right bottom, lightblue,lightgreen);
+}
+h2{
+    color: darkgreen;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.container button{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 80px;
+}
+.container p{
+    margin-top: 30px;
+    color: darkgreen;
+    font-size: 18px;
+}

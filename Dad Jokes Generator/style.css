@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to top right,lightblue,pink,lightblue);
+}
+.container{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-width: 70%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+.container h2{
+    margin: 40px;
+    color: darkgreen;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, .3) ;
+}
+.container #title{
+    color: darkgreen;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.container .btn{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    border: none;
+    margin: 20px;
+    padding: 7px;
+    width: 30%;
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.container .btn:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  font-family: cursive;
+  overflow: hidden;
+}
+#timer {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #f92672;
+  text-shadow: 2px 2px #f8a5c2;
+  width: 600px;
+  text-align: center;
+  padding: 40px auto;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+#buttons button {
+  background-color: #f92672;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border: none;
+  border-radius: 30px;
+  padding: 1.5rem 4rem;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+#buttons button:hover{
+    background-color: #f44583;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+#buttons button[disabled] {
+    opacity: 0.5;
+}
+
+@media (max-width:800px) {
+    #timer{
+        font-size: 3rem;
+        width: 350px;
+    }
+    #buttons button{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}

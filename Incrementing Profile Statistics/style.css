@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: yellow;
+    text-align: center;
+    font-family: cursive;
+}
+@media (max-width:600px) {
+    body{
+        flex-direction: column;
+    }
+    
+}
+.stats-container{
+    margin: 20px;
+    border: dotted green;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+.stats-container .icon{
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.stats-container .counter{
+    padding: 15px;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: green;
+}
+.stats-container h4{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
