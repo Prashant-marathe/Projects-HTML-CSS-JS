@@ -1,7 +1,8 @@
+import config from '../config.js'
 const btnEl = document.getElementById("btn");
 const jokeEl = document.getElementById("title");
 
-const apiKey = "Io+3ogNaTu2vKeO74jw9jw==pcBAoamW7uxeZU6O";
+const apiKey = config.dadjokes_api_key;
 const options = {
   method: "GET",
   headers: {

@@ -1,3 +1,5 @@
+import config from "../config.js";
+
 const inputEl = document.getElementById("input");
 const meaningContainerEl = document.getElementById("meaning-container");
 const textEl = document.querySelector(".text");
@@ -14,7 +16,7 @@ async function fetchApi(word) {
     textEl.style.display = "block";
     meaningContainerEl.style.display = "none";
     textEl.innerText = `Searching for the meaning of "${word}"`;
-    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    const url = config.dictionary_api_key + word;
     const result = await fetch(url).then((res) => res.json());
     if (result.title) {
       meaningContainerEl.style.display = "block";

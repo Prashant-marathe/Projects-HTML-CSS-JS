@@ -1,4 +1,4 @@
-const apiKey = "07110df4ec264094204f393963dc0c9b";
+import config from '../config.js';
 
 const weatherDataEl = document.getElementById("weather-data");
 
@@ -17,7 +17,7 @@ formEl.addEventListener("submit", (e) => {
 async function getWeatherData(inputValue) {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${config.weather_app_api_key}&units=metric`
     );
 
     if (!response.ok) {
